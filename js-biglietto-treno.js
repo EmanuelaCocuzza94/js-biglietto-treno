@@ -6,8 +6,9 @@ console.log('km scelti dall\'utente: ' + kmDaPercorrere);
 let etàPassegero= prompt('Inserisci la tua età');
 console.log('età scelta dall\'utente: ' + etàPassegero);
 
-let prezzoBase= kmDaPercorrere * 0.21; 
-console.log('Prezzo base calcolato: ' + prezzoBase.toFixed(2));
+let prezzoBase= kmDaPercorrere * 0.21;
+prezzoBase = prezzoBase.toFixed(2);
+console.log('Prezzo base calcolato: ' + prezzoBase);
 
 let sconto = 0;
 
@@ -19,6 +20,7 @@ if (etàPassegero <= 18){
     console.log('Età maggiore di 65 => sconto del 40%');
 }
 
+sconto = sconto.toFixed(2)
 console.log('Sconto in euro: ' + sconto);
 
 
